@@ -24,7 +24,7 @@ class Login extends Component {
 
 
   method_login = () => {
-    axios.post('http://localhost:3001/login', { username: this.state.username, password: this.state.password })
+    axios.post('http://db.thirdtechtycoon.com/login', { username: this.state.username, password: this.state.password })
       .then((result) => {
         if (result.data === true) {
           this.props.notification('success', 'Đăng nhập thành công !');
@@ -59,7 +59,7 @@ class Login extends Component {
       password: password
     }
     localStorage.setItem('tokenLogin', token_item.accessToken);
-    axios.post('http://localhost:3001/insert_token_login_list', { 'token_item': token_item });
+    axios.post('http://db.thirdtechtycoon.com/insert_token_login_list', { 'token_item': token_item });
   }
 
   get_index_time = (day, month, year, hours, min, second) => {
@@ -80,7 +80,7 @@ class Login extends Component {
   login_from_token = () => {
     var tokenLogin = localStorage.getItem('tokenLogin');
     if (tokenLogin !== null) {
-      axios.post('http://localhost:3001/submit_token_login', { 'access_token': tokenLogin }).then(result => {
+      axios.post('http://db.thirdtechtycoon.com/submit_token_login', { 'access_token': tokenLogin }).then(result => {
         var check = this.check_time_of_token(result.data.time.day, result.data.time.month, result.data.time.year, result.data.time.hours, result.data.time.min, result.data.time.second);
         if (check === false) {
           this.props.notification('success', 'Đăng nhập thành công !');

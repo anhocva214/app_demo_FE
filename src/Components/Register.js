@@ -23,7 +23,7 @@ class Register extends Component {
   }
 
   // UNSAFE_componentWillMount(){
-  //   axios.get('http://localhost:3001/getaccount').then((data)=>{
+  //   axios.get('http://db.thirdtechtycoon.com/getaccount').then((data)=>{
   //     this.setState({
   //       data_account: data.data
   //     });
@@ -43,7 +43,7 @@ class Register extends Component {
       username: this.state.username,
       password: this.state.password
     }
-    axios.post('http://localhost:3001/register', account)
+    axios.post('http://db.thirdtechtycoon.com/register', account)
     .then((result)=>{
       if (result.data.status === true){
         this.props.change_status_menu(true);
