@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main.login-page {
+  background-image: url(../img/bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff; }
+  main.login-page .box .title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700; }
+  main.login-page .box span {
+    border: 2px solid greenyellow;
+    padding: 5px 10px;
+    border-radius: 20px; }
+
+main.step-1-page {
+  display: flex;
+  padding: 20px 0;
+  background-image: url(../img/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: #fff; }
+  main.step-1-page .avatar img {
+    border: 4px solid #e8d30d;
+    border-radius: 15px; }
+  main.step-1-page .list-properties {
+    list-style: none; }
+    main.step-1-page .list-properties li {
+      margin-bottom: 10px; }
+  main.step-1-page .info ul {
+    list-style: none;
+    margin-top: 10px; }
+  main.step-1-page .news-24h .title {
+    margin-bottom: 10px;
+    position: relative;
+    font-weight: 700; }
+    main.step-1-page .news-24h .title span {
+      background-color: #e8d30d;
+      border-radius: 10px 10px 0 0;
+      padding: 5px 10px; }
+    main.step-1-page .news-24h .title::after {
+      content: " ";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: #e8d30d;
+      position: absolute;
+      bottom: 0; }
+  main.step-1-page .news-24h .list-news {
+    list-style: none; }
+    main.step-1-page .news-24h .list-news li {
+      margin-bottom: 10px; }
+      main.step-1-page .news-24h .list-news li a {
+        padding-left: 10px;
+        color: #fff; }
+  main.step-1-page .trade-CP .title {
+    margin-bottom: 10px;
+    position: relative;
+    font-weight: 700; }
+    main.step-1-page .trade-CP .title span {
+      background-color: #e8d30d;
+      border-radius: 10px 10px 0 0;
+      padding: 5px 10px; }
+    main.step-1-page .trade-CP .title::after {
+      content: " ";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: #e8d30d;
+      position: absolute;
+      bottom: 0; }
+  main.step-1-page .trade-CP .buy span, main.step-1-page .trade-CP .sale span {
+    border-bottom: 2px solid red; }
+
+main.step-2-page {
+  display: flex;
+  padding: 20px 0;
+  background-image: url(../img/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: #fff; }
+  main.step-2-page .avatar {
+    margin-bottom: 20px; }
+    main.step-2-page .avatar img {
+      height: 150px;
+      border: 3px solid;
+      border-radius: 10px; }
+    main.step-2-page .avatar span {
+      font-size: .9rem; }
+
+main.step-3-page {
+  display: flex;
+  padding: 20px 0;
+  background-image: url(../img/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: #fff; }
+  main.step-3-page .money-current {
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px; }
+    main.step-3-page .money-current span {
+      color: red; }
+  main.step-3-page .money-change {
+    height: 80vh; }
+    main.step-3-page .money-change .form-group-2-div {
+      width: 100%; }
+
+main.step-4-page {
+  display: flex;
+  padding: 20px 0;
+  background-image: url(../img/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: #fff; }
+  main.step-4-page .avatar img {
+    border-radius: 10px;
+    border: 2px solid; }
+  main.step-4-page .information ul {
+    list-style: none; }
+  main.step-4-page .show-product {
+    background-color: #fff;
+    margin: 0 10px;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: #111;
+    text-align: center;
+    font-size: .8rem; }
+    main.step-4-page .show-product img {
+      height: 50px;
+      margin-top: 10px; }
+  main.step-4-page .news-market {
+    margin-top: 20px; }
+    main.step-4-page .news-market .title {
+      margin-bottom: 10px;
+      position: relative;
+      font-weight: 700; }
+      main.step-4-page .news-market .title span {
+        background-color: #e8d30d;
+        border-radius: 10px 10px 0 0;
+        padding: 5px 10px;
+        display: inline-block; }
+      main.step-4-page .news-market .title::after {
+        content: " ";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #e8d30d;
+        position: absolute;
+        bottom: 0; }
+    main.step-4-page .news-market .news-list {
+      overflow-y: auto;
+      height: 235px; }
+      main.step-4-page .news-market .news-list li.item {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        margin-bottom: 10px; }
+
+main.step-5-page {
+  display: flex;
+  padding: 20px 0;
+  background-image: url(../img/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow-y: auto;
+  height: 100%;
+  color: #fff; }
+  main.step-5-page .user-brand {
+    padding: 10px; }
+    main.step-5-page .user-brand .img {
+      height: 150px;
+      overflow-y: hidden; }
+      main.step-5-page .user-brand .img img {
+        border: 3px solid #0f24e7;
+        border-radius: 10px; }
+    main.step-5-page .user-brand ul.list-info {
+      font-size: .9rem;
+      text-align: left;
+      margin: 0; }
+      main.step-5-page .user-brand ul.list-info li.item {
+        margin-bottom: 10px; }
+    main.step-5-page .user-brand .btn-require {
+      text-transform: uppercase;
+      font-size: .9rem;
+      font-weight: 700;
+      color: #c93305; }
+
+      main.menu-page{
+        background-image: url(../img/bg-2.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        color: #fff;
+    }
+    
+    main.menu-page .list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    main.menu-page .list .item a{
+        color: #fff;
+        text-decoration: none;
+        background: #0910e4bd;
+        padding: 15px;
+        margin: 50px;
+        border: 3px solid #12309cfc;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    main.menu-page .list .item a:hover , main.menu-page .list .item a:active{
+        color: #fff;
+    }
